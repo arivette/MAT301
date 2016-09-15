@@ -207,7 +207,15 @@ SELECT 1.35*price AS `Sale Price` FROM Products;
     2. ',' should be 'and'
 
 13. Select products with length less than 12 inches and sort decsending.
+
+        SELECT * FROM unemath_Rivette.Products WHERE length<12 ORDER BY length desc;
+
 14. How many products are there whose price is between $10 and $20?
+
+        SELECT * FROM unemath_Rivette.Products WHERE length<12 ORDER BY length desc;
+        3226 products
+
 15. How many products are there made in China whose MSRP is between $10 and $20.
 
-
+        Select * FROM unemath_Rivette.Products where country='China' and MSRP between 10 and 20;
+        2189 products
