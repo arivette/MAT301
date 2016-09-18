@@ -187,11 +187,11 @@ SELECT 1.35*price AS `Sale Price` FROM Products;
 
 8. Calculuate the shipping volume and report it as 'Volume'.
 
-    SELECT ship_depth*ship_width*ship_length as Volume FROM unemath_Rivette.Products;
+    SELECT ship_depth * ship_width * ship_length as Volume FROM unemath_Rivette.Products;
   
 9. Suppose you want to have a 35% markup on all products and sales tax is 7.5%.  Determine the 'Sales Price' of each product.
 
-    SELECT price, round(1.35*price+0.075*(1.35*price),2) AS 'sales price' FROM unemath_Rivette.Products;
+    SELECT price, round(1.35 * price+0.075 * (1.35*price),2) AS 'sales price' FROM unemath_Rivette.Products;
 
 10. True or False: Both conditions when using the OR operator must be true.
   
