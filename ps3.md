@@ -32,11 +32,11 @@
 
 7. Create a relational data model for *orders*.  Consider applying normalization rules (discuss Monday)
 
-  -
+  - 
 
 8. For customer, could email be used as a primary key?  If so, state why.  Also, if possible to use as a primary key, discuss any disadvantages of using email as a primary key.
 
-  -
+  - Yes, because no two people can have the same email, however people can change their email or have multiple email addresses.
 
 9. Given two relations S and R below find the Cartsian Product S x R. 
 
