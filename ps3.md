@@ -40,13 +40,12 @@
 
 9. Given two relations S and R below find the Cartsian Product S x R. 
 
---------------
 | A | B | C | D | E |
 |---|---|---|---|---|
 | 1 | 2 | 3 | 1 | 1 |
 | 2 | 3 | 2 | 2 | 3 |
 | 0 | 0 | 2 | 1 | 5 |
----------
+
 
 
 10. Find the natural join between the Faculty and Department relations below.
