@@ -48,7 +48,7 @@
 
 
 
-10. Find the natural join between the Faculty and Department relations below.
+10 . Find the natural join between the Faculty and Department relations below.
 
   - The natural join is department
 
