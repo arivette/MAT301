@@ -32,7 +32,11 @@
 
 7. Create a relational data model for *orders*.  Consider applying normalization rules (discuss Monday)
 
-  - 
+  - Customers (cust_id [pk], first_name, last_name, phone, address {street, city, state, zip[fk]}, email, orders)
+  - Orders (order_id [pk], cust_id [fk], date)
+  - Zip (zip [pk], city, state)
+  - Products (product_id [pk], msrp)
+  - Order_info (order_info_id [pk], product_id [fk], quantity)
 
 8. For customer, could email be used as a primary key?  If so, state why.  Also, if possible to use as a primary key, discuss any disadvantages of using email as a primary key.
 
