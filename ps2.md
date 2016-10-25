@@ -160,62 +160,138 @@ SELECT 1.35*price AS `Sale Price` FROM Products;
 1. Select all products (UPC) made in China whose price is less than $50.
 
     SELECT * From unemath_Rivette.Products where Country='China' and Price<50;
+    
+        __Correct__
+
+
+
 
 2. Find products with "bird bath" in the description.
  
     SELECT * From unemath_Rivette.Products where description Like '%bird bath%';
+    
+        __Correct__
+
+
+
 
 3. Find products whose cost is between $10 and $100.
 
     SELECT * FROM unemath_Rivette.Products where price between 10 and 100;
+    
+    
+        __Correct__
+
+
+
 
 4. Find products whose cost is less than or equal to $59.99.
 
     SELECT * from unemath_Rivette.Products where price<=59.99;
+    
+        __Correct__
+
+
 
 5. Find products whose ID is between 5000 and 6000 or 7483, 4939, 3452, 9848, 11293, 12001.
 
     SELECT * from unemath_Rivette.Products where product_id between 5000 and 6000 or product_id in ( 7483, 4939, 3452, 9848, 11293, 12001);
+    
+        __Correct__
+
+
+
 
 6. Find products that are not between 5000 and 6000 or 7483, 4939, 3452, 9848, 11293, 12001.
 
     SELECT * from unemath_Rivette.Products where product_id not between 5000 and 6000 and (not product_id in ( 7483, 4939, 3452, 9848, 11293, 12001));
 
+
+    __put NOT infront of IN__
+
+
+
 7. Find products whose country code is NULL.
 
     SELECT * FROM unemath_Rivette.Products WHERE country is NULL
+        __Correct__
+
+
+
 
 8. Calculuate the shipping volume and report it as 'Volume'.
 
     SELECT ship_depth * ship_width * ship_length as Volume FROM unemath_Rivette.Products;
+    
+        __Correct__
+
+
+
   
 9. Suppose you want to have a 35% markup on all products and sales tax is 7.5%.  Determine the 'Sales Price' of each product.
 
     SELECT price, round(1.35 * price+0.075 * (1.35*price),2) AS 'sales price' FROM unemath_Rivette.Products;
+    
+        __Correct__
+
+
+
 
 10. True or False: Both conditions when using the OR operator must be true.
   
     False
+    
+        __Correct__
+
+
+
 
 11. What is the logical negation of the IN operator?
 
     NOT IN
+    
+    
+        __Correct__
+
+
+
 
 12. What is wrong with the folling statement: `SELECT * FROM Products WHERE price BETWEEN 10, 100;
 
     1. No database name
     2. ',' should be 'and'
+    
+        __Correct__
+
+
+
 
 13. Select products with length less than 12 inches and sort decsending.
 
         SELECT * FROM unemath_Rivette.Products WHERE length<12 ORDER BY length desc;
+        
+            __Correct__
+
+
+
 
 14. How many products are there whose price is between $10 and $20?
 
         SELECT * FROM unemath_Rivette.Products WHERE length<12 ORDER BY length desc;
         3226 products
 
+
+    __Correct__
+
+
+
 15. How many products are there made in China whose MSRP is between $10 and $20.
 
         Select * FROM unemath_Rivette.Products where country='China' and MSRP between 10 and 20;
         2189 products
+        
+        
+            __Correct__
+
+
+
