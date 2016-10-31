@@ -14,6 +14,8 @@
 
 7. Use SQL DML to INSERT records into Customers and Orders (and OrderItems).  
 
+    
+
 8. Find all customer orders.
 
 9. Select all customers that orders a certain product (This will depend on what data you entered into the table).  Find all customers that ordered product 3452.  
